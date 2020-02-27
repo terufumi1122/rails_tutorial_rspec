@@ -16,4 +16,11 @@ RSpec.feature "StaticPages", type: :feature do
     end
   end
 
+  describe 'About' do
+    specify '画面の表示' do
+      visit '/static_pages/about'
+      expect(page).to have_css('h1', text: 'About')
+    end
+  end
+
 end
