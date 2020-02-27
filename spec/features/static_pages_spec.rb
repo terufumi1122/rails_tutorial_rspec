@@ -4,7 +4,7 @@ RSpec.feature "StaticPages", type: :feature do
 
   describe 'Home' do
     specify 'タイトル内容の表示' do
-      visit '/static_pages/home'
+      visit '/'
       expect(page).to have_title 'Home | Ruby on Rails Tutorial Sample App'
     end
   end
